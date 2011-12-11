@@ -1,5 +1,7 @@
-require 'bundler'
-Bundler.setup
+#!/usr/bin/env ruby
+
+$:.unshift(File.join(File.dirname(__FILE__), "/../lib"))
+require 'tictoc'
 
 require 'active_support/core_ext'
 require 'appscript'

@@ -1,0 +1,1 @@
+require 'tictoc/version'
