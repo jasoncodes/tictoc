@@ -49,7 +49,7 @@ end
 
 def format_hours(hours)
   hours = hours.round 2
-  "#{hours.floor.to_s.rjust 2}:#{(hours*60%60).round(0).to_s.rjust(2,'0')} (#{hours} hours)"
+  "#{hours.floor.to_s.rjust 2}:#{(hours*60%60).round(0).to_s.rjust(2,'0')} (#{'%0.02f' % hours} hours)"
 end
 
 days.each do |date,tasks|
