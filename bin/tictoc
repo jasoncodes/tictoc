@@ -48,7 +48,8 @@ sessions.sort.each do |session|
 end
 
 def format_hours(hours)
-  "#{hours.floor.to_s.rjust 2}:#{(hours*60%60).round(0).to_s.rjust(2,'0')} (#{hours.round(2)} hours)"
+  hours = hours.round 2
+  "#{hours.floor.to_s.rjust 2}:#{(hours*60%60).round(0).to_s.rjust(2,'0')} (#{hours} hours)"
 end
 
 days.each do |date,tasks|
