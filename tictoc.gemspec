@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'rb-appscript'
   gem.add_dependency 'i18n'
-  gem.add_dependency 'activerecord', '~> 3.0'
+  gem.add_dependency 'activerecord', '~> 4.0'
 
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'gem-release'
